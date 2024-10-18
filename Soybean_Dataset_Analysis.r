@@ -62,7 +62,6 @@ ggplot(missing_data_summary, aes(x = Predictor, y = MissingProportion)) +
 # Close the PDF device
 dev.off()
 pdf("missing_data_pattern.pdf")
-# Assuming your dataset is called 'soybean_data'
 # Visualize the missing data pattern using VIM package
 missing_data_plot <- aggr(Soybean, col = c('navyblue', 'red'),
                           numbers = TRUE, sortVars = TRUE, 
